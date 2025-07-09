@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/nav.css}">
+
+<body>
+<header class="nav-glow">
+    <div class="nav-logo">
+        <span>Uday<span class="highlight">Finance</span></span>
+    </div>
+    <nav class="nav-menu">
+        <a th:href="@{/dashboard}">Dashboard</a>
+        <a th:href="@{/ledger}">Ledger</a>
+        <a th:href="@{/budget}">Budget</a>
+        <form th:action="@{/logout}" method="post">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </nav>
+</header>
+</body>
+</html>
